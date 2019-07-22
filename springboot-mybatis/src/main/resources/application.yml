@@ -1,0 +1,12 @@
+spring:
+  #jpa
+  jpa:
+    hibernate:
+      ddl-auto: update #如果使用jpa创建表,使用create,如果不需要则使用update
+    show-sql: true
+  #mysql
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test?characterEncoding=utf8&serverTimezone=GMT&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: mqc520

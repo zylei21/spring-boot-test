@@ -1,0 +1,15 @@
+my:
+  name: lsf #自定义属性与属性值需要空出一个空格
+  age: 12
+server:
+  port: 80
+
+#定义一组属性
+person:
+  name: lsf
+  age : 28
+  uuid: ${random.uuid}
+  num: ${random.int}
+  max : ${random.long(10)}
+  value: ${random.value}
+  sayhi: hi! I 'm ${person.name}

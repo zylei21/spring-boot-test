@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.cibei.springbootmybatistransaction.persistence.mapper.AccountMapper">
+    <update id="update"  parameterType="com.cibei.springbootmybatistransaction.persistence.entity.Account" >
+        update account set money=#{money} where id=#{id}
+    </update>
+
+    <select id="queryById" parameterType="Integer" resultType="com.cibei.springbootmybatistransaction.persistence.entity.Account">
+        select * from account where id=#{id}
+    </select>
+</mapper>
